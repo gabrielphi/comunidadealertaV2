@@ -1,0 +1,44 @@
+### RabbitMQ ###
+rabbitmq
+
+### Celery Beat ###
+celerybeat-schedule
+
+### Python ###
+__pycache__/
+*.py[cod]
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Thumbnails
+._*
+.vscode/launch.json
+.vscode/.ropeproject/config.py
+.vscode/.ropeproject/objectdb
+
+
+node_modules
+.idea/
+
+pyvenv.cfg
+bin/
+lib/
+lib64
+lib64/
+
+static/*
+!static/assets
+!static/error-pages
+!static/favicons
+!static/fonts
+
+.vscode/settings.json
+venv*/
+
+#coverage
+.coverage

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'saude',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,10 @@ WSGI_APPLICATION = 'comunidadealertaV2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE'  : 'django.db.backends.mysql', # <-- UPDATED line 
-        'NAME'    : 'comunidadeAlerta',                 # <-- UPDATED line 
-        'USER'    : 'user',                     # <-- UPDATED line
-        'PASSWORD': 'senha123',              # <-- UPDATED line
-        'HOST'    : 'localhost',                # <-- UPDATED line
+        'NAME'    : 'comunidadealerta',                 # <-- UPDATED line 
+        'USER'    : 'root',                     # <-- UPDATED line
+        'PASSWORD': 'admin',              # <-- UPDATED line
+        'HOST'    : 'mysql',                # <-- UPDATED line
         'PORT'    : '3306',
     }
 }
@@ -107,9 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

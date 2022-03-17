@@ -3,8 +3,8 @@ from django.contrib import admin
 from saude.models import *
 
 class MedicoAdmin(admin.ModelAdmin):
-    list_display = ['crm' ,'nome', 'displayEspecialidade', 'displayTrabalha']
-
+    list_display = ['crm' ,'nome']
+    list_filter = [ 'especialidade', 'trabalha']
 class PostoDeSaudeAdmin(admin.ModelAdmin):
     list_display = ['id' ,'nome', 'bairro', 'cidade', 'rua', 'telefone']
 

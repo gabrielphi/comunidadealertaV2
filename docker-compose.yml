@@ -36,8 +36,12 @@ services:
   frontend:
     build: frontend
     command: npm run start
+    stdin_open: true
+    restart: on-failure
     volumes:
-      - ./frontend:/app
+      - ./frontend:/app/frontend:z
+      - ./frontend/package-lock.json:/app/frontend/package-lock.json:z
+      - ./frontend/package.json:/app/frontend/package.json:z
     environment:
       - CHOKIDAR_USEPOLLING=true
 
